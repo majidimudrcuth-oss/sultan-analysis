@@ -1,2423 +1,451 @@
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-        content="SULTAN ANALYSIS - Professional statistical analysis, research, data cleaning, visualization and research support services.">
-
-    <title>SULTAN ANALYSIS | Statistical & Research Solutions</title>
-
-    <!-- Bootstrap 5.3 CSS -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet">
-
-    <!-- Bootstrap Icons -->
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <!-- Your Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-
+    <meta name="description" content="SULTAN ANALYSIS provides professional statistical analysis, research support, data cleaning, visualization and reporting services in Tanzania.">
+    <title>SULTAN ANALYSIS | Statistical &amp; Research Solutions</title>
+    <link rel="icon" type="image/png" href="logos/file_00000000463c71f48376970273360c1b.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        :root { --ink: #132238; --green: #087f5b; --gold: #f4b942; --mist: #f4f7f5; }
+        html { scroll-behavior: smooth; }
+        body { color: var(--ink); font-family: Georgia, 'Times New Roman', serif; background: #fff; }
+        .navbar { background: var(--ink) !important; }
+        .navbar-brand, .nav-link { letter-spacing: .03em; }
+        .brand-logo { width: 42px; height: 42px; object-fit: contain; border-radius: 50%; background: #fff; }
+        .hero { min-height: 78vh; display: grid; align-items: center; color: #fff; background: linear-gradient(120deg, rgba(19,34,56,.96), rgba(8,127,91,.85)), radial-gradient(circle at 85% 20%, #f4b942 0, transparent 28%); }
+        .hero h1 { font-size: clamp(3.2rem, 8vw, 6.5rem); line-height: .92; }
+        .hero-mark { width: 220px; height: 220px; display: grid; place-items: center; margin: auto; border: 1px solid rgba(255,255,255,.35); border-radius: 50%; overflow: hidden; transform: rotate(-8deg); }
+        .hero-mark img { width: 100%; height: 100%; object-fit: cover; }
+        .section-label { color: var(--green); font-size: .8rem; font-weight: 700; letter-spacing: .18em; }
+        .section-band { background: var(--mist); }
+        .service-card, .project-card { height: 100%; border: 0; border-top: 4px solid var(--green); box-shadow: 0 1rem 2rem rgba(19,34,56,.08); transition: transform .2s ease, box-shadow .2s ease; }
+        .service-card:hover, .project-card:hover { transform: translateY(-5px); box-shadow: 0 1.25rem 2.5rem rgba(19,34,56,.14); }
+        .service-icon { color: var(--green); font-size: 2.5rem; }
+        .project-number { color: var(--gold); font-size: .8rem; font-weight: 700; letter-spacing: .12em; }
+        .contact { background: var(--green); color: #fff; }
+        .contact a { color: #fff; }
+        .whatsapp-floating { position: fixed; right: 1.25rem; bottom: 1.25rem; z-index: 10; display: grid; place-items: center; width: 3.5rem; height: 3.5rem; border-radius: 50%; color: #fff; background: #20c997; font-size: 1.5rem; box-shadow: 0 .5rem 1rem rgba(0,0,0,.25); }
+        @media (max-width: 575px) { .hero { min-height: 700px; } .hero-mark { width: 150px; height: 150px; font-size: 4.5rem; } }
+    </style>
 </head>
-
-
 <body>
-
-<!-- =====================================================
-     NAVIGATION BAR
-===================================================== -->
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow">
-
-    <div class="container">
-
-        <!-- LOGO -->
-        <a class="navbar-brand fw-bold" href="#home">
-
-            <i class="bi bi-bar-chart-fill"></i>
-
-            SULTAN ANALYSIS
-
-        </a>
-
-
-        <!-- MOBILE MENU BUTTON -->
-
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNavbar">
-
-            <span class="navbar-toggler-icon"></span>
-
-        </button>
-
-
-        <!-- NAVIGATION LINKS -->
-
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#home"><img class="brand-logo" src="logos/file_00000000463c71f48376970273360c1b.png" alt="SULTAN ANALYSIS logo">SULTAN ANALYSIS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="mainNavbar">
-
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
-                <li class="nav-item">
-                    <a class="nav-link active" href="#home">
-                        Start
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">
-                        About
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#vision">
-                        Vision
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#mission">
-                        Mission
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">
-                        Services
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">
-                        Projects
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">
-                        Contact
-                    </a>
-                </li>
-
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item ms-lg-3"><a class="btn btn-warning fw-bold" href="https://wa.me/255614495416" target="_blank" rel="noopener"><i class="bi bi-whatsapp me-1"></i>Start a project</a></li>
             </ul>
-
-
-            <!-- LOGIN BUTTON -->
-
-            <a href="login.html"
-                class="btn btn-light text-success fw-bold ms-lg-3">
-
-                <i class="bi bi-person-circle"></i>
-
-                Log In
-
-            </a>
-
         </div>
-
     </div>
-
 </nav>
 
 
+<!-- =========================================================
+  SULTAN ANALYSIS — Scrolling welcome text banner (right ➜ left)
+  Paste this at the top of your website, right after <body>.
+========================================================= -->
 
-<!-- =====================================================
-     HERO / START SECTION
-===
-
-<section id="home" class="hero-section text-white">
-
-    <div class="container">
-
-        <div class="row align-items-center min-vh-75">
-
-            <!-- LEFT SIDE -->
-
-            <div class="col-lg-7 text-center text-lg-start">
-
-                <span class="badge bg-warning text-dark mb-3 px-3 py-2">
-
-                    PROFESSIONAL STATISTICAL SOLUTIONS
-
-                </span>
-
-
-                <h1 class="display-3 fw-bold">
-
-                    SULTAN
-                    <span class="text-warning">
-                        ANALYSIS
-                    </span>
-
-                </h1>
-
-
-                <h2 class="fs-3 mb-4">
-
-                    Transforming Data into Meaningful Insights
-
-                </h2>
-
-
-                <p class="lead mb-4">
-
-                    We provide professional statistical analysis,
-                    research support, data cleaning, data visualization,
-                    report writing and statistical software services.
-
-                </p>
-
-
-                <!-- BUTTONS -->
-
-                <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
-
-                    <!-- GET STARTED -->
-
-                    <a
-                        href="https://wa.me/255614495416?text=Hello%20SULTAN%20ANALYSIS,%20I%20would%20like%20to%20get%20started%20with%20your%20services."
-                        target="_blank"
-                        class="btn btn-warning btn-lg fw-bold">
-
-                        <i class="bi bi-whatsapp"></i>
-
-                        Get Started
-
-                        <i class="bi bi-arrow-right"></i>
-
-                    </a>
-
-
-                    <!-- LEARN MORE -->
-
-                    <a
-                        href="#about"
-                        class="btn btn-outline-light btn-lg">
-
-                        Learn More
-
-                        <i class="bi bi-arrow-down"></i>
-
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- RIGHT SIDE -->
-
-            <div class="col-lg-5 text-center mt-5 mt-lg-0">
-
-                <div class="hero-icon">
-
-                    <i class="bi bi-bar-chart-line-fill"></i>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
+<section class="sa-banner">
+  <div class="sa-banner-track">
+    <span class="sa-banner-text">WELCOME TO SULTAN ANALYSIS &nbsp;&nbsp;•&nbsp;&nbsp; PROFESSION OF STATISTICAL SOLUTION &nbsp;&nbsp;•&nbsp;&nbsp; TRANSFORM DATA INTO MEANINGFUL INSIGHTS.</span>
+    <span class="sa-banner-text" aria-hidden="true">WELCOME TO SULTAN ANALYSIS &nbsp;&nbsp;•&nbsp;&nbsp; PROFESSION OF STATISTICAL SOLUTION &nbsp;&nbsp;•&nbsp;&nbsp; TRANSFORM DATA INTO MEANINGFUL INSIGHTS.</span>
+  </div>
 </section>
 
+<style>
+  .sa-banner {
+    width: 100%;
+    background: #0b1220;
+    padding: 16px 0;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .sa-banner-track {
+    display: flex;
+    width: max-content;
+    animation: sa-banner-scroll 40s linear infinite;
+    /* 40s = moderate slow speed — increase the number for slower, decrease for faster */
+  }
+
+  .sa-banner-track:hover {
+    animation-play-state: paused;
+  }
+
+  .sa-banner-text {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding-right: 60px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  @keyframes sa-banner-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  @media (max-width: 640px) {
+    .sa-banner-text {
+      font-size: 16px;
+      padding-right: 40px;
+    }
+  }
+</style>
 
 
-<!-- =====================================================
-     ABOUT SECTION
-===================================================== -->
 
-<section id="about" class="py-5">
-
-    <div class="container">
-
-        <div class="text-center mb-5">
-
-            <span class="text-success fw-bold">
-                ABOUT US
-            </span>
-
-            <h2 class="display-6 fw-bold">
-                About SULTAN ANALYSIS
-            </h2>
-
-            <p class="text-muted">
-                Professional statistical and research solutions.
-            </p>
-
-        </div>
-
-
+<header id="home" class="hero py-5">
+    <div class="container py-5">
         <div class="row align-items-center g-5">
-
-            <div class="col-lg-6">
-
-                <h3 class="fw-bold">
-                    Turning Data Into Knowledge
-                </h3>
-
-                <p class="text-muted">
-
-                    SULTAN ANALYSIS provides statistical and research
-                    solutions designed to help students, researchers,
-                    organizations and businesses understand their data.
-
-                </p>
-
-                <p class="text-muted">
-
-                    Our services cover the complete data analysis process,
-                    from data cleaning and preparation to statistical
-                    analysis, visualization and interpretation.
-
-                </p>
-
+            <div class="col-lg-7">
+                <p class="text-warning fw-bold letter-spacing mb-3">PROFESSIONAL STATISTICAL SOLUTIONS</p>
+                <h1 class="fw-bold mb-4">SULTAN <span class="text-warning">ANALYSIS</span></h1>
+                <h2 class="h3 fw-normal mb-4">Transforming data into meaningful insights.</h2>
+                <p class="lead mb-4">Clear analysis, reliable research support, and polished reporting for students, researchers, organizations, and businesses.</p>
+                <a class="btn btn-warning btn-lg fw-bold me-2 mb-2" href="https://wa.me/255614495416?text=Hello%20SULTAN%20ANALYSIS,%20I%20would%20like%20to%20get%20started." target="_blank" rel="noopener"><i class="bi bi-whatsapp me-2"></i>Get started</a>
+                <a class="btn btn-outline-light btn-lg mb-2" href="#services">Explore services <i class="bi bi-arrow-down ms-1"></i></a>
             </div>
-
-
-            <div class="col-lg-6">
-
-                <div class="row g-3">
-
-                    <div class="col-6">
-
-                        <div class="card border-0 shadow-sm text-center p-4">
-
-                            <i class="bi bi-database-fill fs-1 text-success"></i>
-
-                            <h5 class="mt-3">
-                                Data Analysis
-                            </h5>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-6">
-
-                        <div class="card border-0 shadow-sm text-center p-4">
-
-                            <i class="bi bi-graph-up-arrow fs-1 text-success"></i>
-
-                            <h5 class="mt-3">
-                                Visualization
-                            </h5>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-6">
-
-                        <div class="card border-0 shadow-sm text-center p-4">
-
-                            <i class="bi bi-search fs-1 text-success"></i>
-
-                            <h5 class="mt-3">
-                                Research
-                            </h5>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-6">
-
-                        <div class="card border-0 shadow-sm text-center p-4">
-
-                            <i class="bi bi-file-earmark-text fs-1 text-success"></i>
-
-                            <h5 class="mt-3">
-                                Reporting
-                            </h5>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+            <div class="col-lg-5 text-center"><div class="hero-mark"><img src="logos/file_00000000463c71f48376970273360c1b.png" alt="SULTAN ANALYSIS logo"></div></div>
         </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     VISION & MISSION
-===================================================== -->
-
-<section class="py-5 bg-light">
-
-    <div class="container">
-
-        <div class="text-center mb-5">
-
-            <span class="text-success fw-bold">
-                OUR DIRECTION
-            </span>
-
-            <h2 class="display-6 fw-bold">
-                Vision & Mission
-            </h2>
-
-        </div>
-
-
-        <div class="row g-4">
-
-            <!-- VISION -->
-
-            <div class="col-md-6" id="vision">
-
-                <div class="card h-100 border-0 shadow-sm p-4">
-
-                    <div class="text-center">
-
-                        <i class="bi bi-eye-fill display-3 text-success"></i>
-
-                        <h3 class="fw-bold mt-3">
-                            Our Vision
-                        </h3>
-
-                    </div>
-
-                    <p class="text-muted text-center">
-
-                        To become a trusted and leading provider of
-                        statistical, research, data analysis and
-                        data-driven solutions in Tanzania and beyond.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- MISSION -->
-
-            <div class="col-md-6" id="mission">
-
-                <div class="card h-100 border-0 shadow-sm p-4">
-
-                    <div class="text-center">
-
-                        <i class="bi bi-bullseye display-3 text-success"></i>
-
-                        <h3 class="fw-bold mt-3">
-                            Our Mission
-                        </h3>
-
-                    </div>
-
-                    <p class="text-muted text-center">
-
-                        To provide accurate, reliable, professional
-                        and innovative statistical and research
-                        solutions that transform data into meaningful
-                        insights for better decision-making.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     SERVICES
-===================================================== -->
-
-<section id="services" class="py-5">
-
-    <div class="container">
-
-        <div class="text-center mb-5">
-
-            <span class="text-success fw-bold">
-                WHAT WE DO
-            </span>
-
-            <h2 class="display-6 fw-bold">
-                Our Services
-            </h2>
-
-            <p class="text-muted">
-                Professional statistical and research services.
-            </p>
-
-        </div>
-
-
-        <div class="row g-4">
-
-            <!-- SERVICE 1 -->
-
-            <div class="col-md-6 col-lg-4">
-
-                <div class="card service-card h-100 border-0 shadow-sm">
-
-                    <div class="card-body text-center p-4">
-
-                        <i class="bi bi-bar-chart-fill display-4 text-success"></i>
-
-                        <h4 class="fw-bold mt-3">
-                            Data Analysis
-                        </h4>
-
-                        <p class="text-muted">
-                            Professional statistical analysis and
-                            interpretation of research data.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- SERVICE 2 -->
-
-            <div class="col-md-6 col-lg-4">
-
-                <div class="card service-card h-100 border-0 shadow-sm">
-
-                    <div class="card-body text-center p-4">
-
-                        <i class="bi bi-database-fill-gear display-4 text-success"></i>
-
-                        <h4 class="fw-bold mt-3">
-                            Data Cleaning
-                        </h4>
-
-                        <p class="text-muted">
-                            Cleaning, coding and preparation of
-                            datasets for analysis.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- SERVICE 3 -->
-
-            <div class="col-md-6 col-lg-4">
-
-                <div class="card service-card h-100 border-0 shadow-sm">
-
-                    <div class="card-body text-center p-4">
-
-                        <i class="bi bi-search display-4 text-success"></i>
-
-                        <h4 class="fw-bold mt-3">
-                            Research Design
-                        </h4>
-
-                        <p class="text-muted">
-                            Research methodology, objectives,
-                            hypotheses and study design.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- SERVICE 4 -->
-
-            <div class="col-md-6 col-lg-4">
-
-                <div class="card service-card h-100 border-0 shadow-sm">
-
-                    <div class="card-body text-center p-4">
-
-                        <i class="bi bi-file-earmark-text-fill display-4 text-success"></i>
-
-                        <h4 class="fw-bold mt-3">
-                            Research Writing
-                        </h4>
-
-                        <p class="text-muted">
-                            Professional research reports,
-                            statistical interpretation and writing.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- SERVICE 5 -->
-
-            <div class="col-md-6 col-lg-4">
-
-                <div class="card service-card h-100 border-0 shadow-sm">
-
-                    <div class="card-body text-center p-4">
-
-                        <i class="bi bi-pie-chart-fill display-4 text-success"></i>
-
-                        <h4 class="fw-bold mt-3">
-                            Data Visualization
-                        </h4>
-
-                        <p class="text-muted">
-                            Charts, graphs, dashboards and
-                            professional statistical presentations.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- SERVICE 6 -->
-
-            <div class="col-md-6 col-lg-4">
-
-                <div class="card service-card h-100 border-0 shadow-sm">
-
-                    <div class="card-body text-center p-4">
-
-                        <i class="bi bi-pc-display-horizontal display-4 text-success"></i>
-
-                        <h4 class="fw-bold mt-3">
-                            Statistical Software
-                        </h4>
-
-                        <p class="text-muted">
-                            SPSS, Stata, R and EViews installation
-                            and statistical software support.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     PROJECTS
-===================================================== -->
-
-<section id="projects" class="py-5 bg-light">
-
-    <div class="container">
-
-        <div class="text-center mb-5">
-
-            <span class="text-success fw-bold">
-                OUR WORK
-            </span>
-
-            <h2 class="display-6 fw-bold">
-                Our Projects
-            </h2>
-
-            <p class="text-muted">
-                Selected statistical and research projects.
-            </p>
-
-        </div>
-
-
-        <div class="row g-4">
-
-
-            <!-- PROJECT 1 -->
-
-            <div class="col-md-6 col-lg-4">
-
-                <div class="card project-card h-100 border-0 shadow-sm">
-
-                    <div class="card-body p-4">
-
-                        <span class="badge bg-success">
-                            PROJECT 01
-                        </span>
-
-                        <h4 class="fw-bold mt-3">
-                            Tanzania Women Empowerment Data Analysis
-                        </h4>
-
-                        <p class="text-muted">
-
-                            Statistical analysis of women empowerment
-                            data using descriptive and inferential
-                            statistical methods.
-
-                        </p>
-
-                        <a href="projects/women-empowerment.html"
-                            class="btn btn-outline-success">
-
-                            View Project →
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- PROJECT 2 -->
-
-            <div class="col-md-6 col-lg-4">
-
-                <div class="card project-card h-100 border-0 shadow-sm">
-
-                    <div class="card-body p-4">
-
-                        <span class="badge bg-success">
-                            PROJECT 02
-                        </span>
-
-                        <h4 class="fw-bold mt-3">
-                            Agricultural Statistical Analysis
-                        </h4>
-
-                        <p class="text-muted">
-
-                            Agricultural data analysis with tables,
-                            charts, histograms and statistical
-                            interpretation.
-
-                        </p>
-
-                        <a href="projects/agricultural-analysis.html"
-                            class="btn btn-outline-success">
-
-                            View Project →
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- PROJECT 3 -->
-
-            <div class="col-md-6 col-lg-4">
-
-                <div class="card project-card h-100 border-0 shadow-sm">
-
-                    <div class="card-body p-4">
-
-                        <span class="badge bg-success">
-                            PROJECT 03
-                        </span>
-
-                        <h4 class="fw-bold mt-3">
-                            Regression Analysis
-                        </h4>
-
-                        <p class="text-muted">
-
-                            Regression analysis including R²,
-                            adjusted R², ANOVA, SSR, SSE and
-                            statistical interpretation.
-
-                        </p>
-
-                        <a href="projects/regression-analysis.html"
-                            class="btn btn-outline-success">
-
-                            View Project →
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- PROJECT 4 -->
-
-            <div class="col-md-6 col-lg-4">
-
-                <div class="card project-card h-100 border-0 shadow-sm">
-
-                    <div class="card-body p-4">
-
-                        <span class="badge bg-success">
-                            PROJECT 04
-                        </span>
-
-                        <h4 class="fw-bold mt-3">
-                            Chi-Square Analysis
-                        </h4>
-
-                        <p class="text-muted">
-
-                            Analysis of categorical variables using
-                            contingency tables and chi-square tests.
-
-                        </p>
-
-                        <a href="projects/chi-square-analysis.html"
-                            class="btn btn-outline-success">
-
-                            View Project →
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- PROJECT 5 -->
-
-            <div class="col-md-6 col-lg-4">
-
-                <div class="card project-card h-100 border-0 shadow-sm">
-
-                    <div class="card-body p-4">
-
-                        <span class="badge bg-success">
-                            PROJECT 05
-                        </span>
-
-                        <h4 class="fw-bold mt-3">
-                            Correlation Analysis
-                        </h4>
-
-                        <p class="text-muted">
-
-                            Pearson and Spearman correlation analysis
-                            for examining relationships between variables.
-
-                        </p>
-
-                        <a href="projects/correlation-analysis.html"
-                            class="btn btn-outline-success">
-
-                            View Project →
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- PROJECT 6 -->
-
-            <div class="col-md-6 col-lg-4">
-
-                <div class="card project-card h-100 border-0 shadow-sm">
-
-                    <div class="card-body p-4">
-
-                        <span class="badge bg-success">
-                            PROJECT 06
-                        </span>
-
-                        <h4 class="fw-bold mt-3">
-                            Descriptive Statistics
-                        </h4>
-
-                        <p class="text-muted">
-
-                            Mean, median, mode, variance, standard
-                            deviation, skewness, kurtosis and outliers.
-
-                        </p>
-
-                        <a href="projects/descriptive-statistics.html"
-                            class="btn btn-outline-success">
-
-                            View Project →
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     CONTACT SECTION
-===================================================== -->
-
-<section id="contact" class="py-5 bg-success text-white">
-
-    <div class="container">
-
-        <div class="text-center mb-5">
-
-            <h2 class="display-6 fw-bold">
-                Contact SULTAN ANALYSIS
-            </h2>
-
-            <p>
-                Get in touch with us for professional statistical
-                and research support.
-            </p>
-
-        </div>
-
-
-        <div class="row g-4 text-center">
-
-
-            <!-- LOCATION -->
-
-            <div class="col-md-3">
-
-                <i class="bi bi-geo-alt-fill display-5"></i>
-
-                <h5 class="mt-3">
-                    Location
-                </h5>
-
-                <p>
-                    Dodoma, Tanzania
-                </p>
-
-            </div>
-
-
-            <!-- PHONE -->
-
-            <div class="col-md-3">
-
-                <i class="bi bi-telephone-fill display-5"></i>
-
-                <h5 class="mt-3">
-                    Phone
-                </h5>
-
-                <p>
-                    <a
-                        href="tel:0614495416"
-                        class="text-white text-decoration-none">
-
-                        0614495416
-
-                    </a>
-                </p>
-
-                <p>
-                    <a
-                        href="tel:0755792134"
-                        class="text-white text-decoration-none">
-
-                        0755792134
-
-                    </a>
-                </p>
-
-            </div>
-
-
-            <!-- EMAIL -->
-
-            <div class="col-md-3">
-
-                <i class="bi bi-envelope-fill display-5"></i>
-
-                <h5 class="mt-3">
-                    Email
-                </h5>
-
-                <p>
-
-                    <a
-                        href="mailto:majidimudrcuth@gmail.com"
-                        class="text-white text-decoration-none">
-
-                        majidimudrcuth@gmail.com
-
-                    </a>
-
-                </p>
-
-            </div>
-
-
-            <!-- WHATSAPP -->
-
-            <div class="col-md-3">
-
-                <i class="bi bi-whatsapp display-5"></i>
-
-                <h5 class="mt-3">
-                    WhatsApp
-                </h5>
-
-                <a
-                    href="https://wa.me/255614495416"
-                    target="_blank"
-                    class="btn btn-light text-success fw-bold">
-
-                    Chat With Us
-
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- GET STARTED -->
-
-        <div class="text-center mt-5">
-
-            <h3 class="fw-bold">
-                Ready to Get Started?
-            </h3>
-
-            <p>
-                Contact SULTAN ANALYSIS directly through WhatsApp.
-            </p>
-
-            <a
-                href="https://wa.me/255614495416?text=Hello%20SULTAN%20ANALYSIS,%20I%20would%20like%20to%20request%20your%20services."
-                target="_blank"
-                class="btn btn-warning btn-lg fw-bold">
-
-                <i class="bi bi-whatsapp"></i>
-
-                Get Started
-
-                <i class="bi bi-arrow-right"></i>
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer class="bg-dark text-white py-4">
-
-    <div class="container">
-
-        <div class="row align-items-center">
-
-            <div class="col-md-6">
-
-                <h5 class="fw-bold">
-                    SULTAN ANALYSIS
-                </h5>
-
-                <small>
-                    Transforming Data into Meaningful Insights.
-                </small>
-
-            </div>
-
-
-            <div class="col-md-6 text-md-end mt-3 mt-md-0">
-
-                <small>
-                    © 2026 SULTAN ANALYSIS. All Rights Reserved.
-                </small>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</footer>
-
-
-
-<!-- =====================================================
-     FLOATING WHATSAPP BUTTON
-===================================================== -->
-
-<a
-    href="https://wa.me/255614495416?text=Hello%20SULTAN%20ANALYSIS,%20I%20need%20your%20services."
-    target="_blank"
-    class="whatsapp-floating">
-
-    <i class="bi bi-whatsapp"></i>
-
-</a>
-
-
-
-<!-- Bootstrap JavaScript -->
-
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
-
-
-<!-- Your JavaScript -->
-
-<script src="script.js"></script>
-
-</body>
-
-</ht
-
-}
-
-
-
-   
-
-}
-</body>
-</html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>SULTAN ANALYSIS</title>
-
-    <style>
-       
-    
-
-    <!-- SERVICES -->
-    <section class="services" id="services">
-
-        <h2>Our Services</h2>
-
-        <div class="service-container">
-
-            <div class="service-box">
-                <h3>Data Analysis</h3>
-                <p>
-                    Statistical analysis and interpretation
-                    of research data.
-                </p>
-            </div>
-
-            <div class="service-box">
-                <h3>Data Cleaning</h3>
-                <p>
-                    Cleaning, organizing and preparing
-                    datasets for analysis.
-                </p>
-            </div>
-
-            <div class="service-box">
-                <h3>Research Design</h3>
-                <p>
-                    Support in research methodology,
-                    objectives and study design.
-                </p>
-            </div>
-
-            <div class="service-box">
-                <h3>Data Visualization</h3>
-                <p>
-                    Creating professional charts,
-                    graphs and statistical dashboards.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-
-        <h2>Contact SULTAN ANALYSIS</h2>
-
-        <p>
-            📞 Phone:
-            <a href="tel:+255XXXXXXXXX">
-                +255 XXX XXX XXX
-            </a>
-        </p>
-
-        <p>
-            📧 Email:
-            <a href="mailto:info@sultanalysis.com">
-                info@sultanalysis.com
-            </a>
-        </p>
-
-        <p>
-            📍 Location: Dodoma, Tanzania
-        </p>
-
-    </section>
-
-
-    <!-- FOOTER -->
-    <footer>
-
-        <p>
-            © 2026 SULTAN ANALYSIS. All Rights Reserved.
-        </p>
-
-    </footer>
-
-</body>
-</html>
-        <div class="contact-box">
-            <div class="contact-icon">✉️</div>
-            <h3>Email Address</h3>
-            <p>
-                <a href="mailto:majidimudrcuth@gmail.com">
-                    majidimudrcuth@gmail.com
-                </a>
-            </p>
-        </div>
-
-        <div class="contact-box">
-            <div class="contact-icon">💬</div>
-            <h3>WhatsApp</h3>
-            <p>
-                <a
-                    href="https://wa.me/255614495416"
-                    target="_blank"
-                    rel="noopener"
-                >
-                    Chat with us directly
-                </a>
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- OUR PROJECTS SECTION -->
-<section id="projects" class="projects-section">
-
-    <div class="section-title">
-        <p>OUR WORK</p>
-        <h2>Our Projects</h2>
-        <span>
-            Examples of our statistical, research, and data analysis work.
-        </span>
-    </div>
-
-    <div class="projects-grid">
-
-        <div class="project-card">
-            <span class="project-number">01</span>
-            <h3>Tanzania Women Empowerment Data Analysis</h3>
-            <p>
-                Analysis of women empowerment data using descriptive statistics,
-                chi-square tests, correlation, and other statistical methods.
-            </p>
-            <a href="projects/women-empowerment.html">
-                Learn More →
-            </a>
-        </div>
-
-        <div class="project-card">
-            <span class="project-number">02</span>
-            <h3>Agricultural Statistical Analysis</h3>
-            <p>
-                Agricultural data analysis using tables, charts, histograms,
-                pie charts, and statistical interpretation.
-            </p>
-            <a href="projects/agricultural-analysis.html">
-                Learn More →
-            </a>
-        </div>
-
-        <div class="project-card">
-            <span class="project-number">03</span>
-            <h3>Regression Analysis</h3>
-            <p>
-                Statistical regression analysis involving slope, intercept,
-                R-square, adjusted R-square, ANOVA, SSR, SSE, and SST.
-            </p>
-            <a href="projects/regression-analysis.html">
-                Learn More →
-            </a>
-        </div>
-
-        <div class="project-card">
-            <span class="project-number">04</span>
-            <h3>Chi-Square Analysis</h3>
-            <p>
-                Analysis of relationships between categorical variables using
-                contingency tables and chi-square tests.
-            </p>
-            <a href="projects/chi-square-analysis.html">
-                Learn More →
-            </a>
-        </div>
-
-        <div class="project-card">
-            <span class="project-number">05</span>
-            <h3>Correlation Analysis</h3>
-            <p>
-                Examination of relationships between variables using Pearson
-                and Spearman correlation methods.
-            </p>
-            <a href="projects/correlation-analysis.html">
-                Learn More →
-            </a>
-        </div>
-
-        <div class="project-card">
-            <span class="project-number">06</span>
-            <h3>Descriptive Statistics</h3>
-            <p>
-                Calculation and interpretation of mean, median, mode, variance,
-                standard deviation, skewness, kurtosis, and outliers.
-            </p>
-            <a href="projects/descriptive-statistics.html">
-                Learn More →
-            </a>
-        </div>
-
-        <div class="project-card">
-            <span class="project-number">07</span>
-            <h3>Research Design and Analysis</h3>
-            <p>
-                Support in research objectives, hypotheses, methodology,
-                sampling, data collection, and statistical analysis.
-            </p>
-            <a href="projects/research-design.html">
-                Learn More →
-            </a>
-        </div>
-
-        <div class="project-card">
-            <span class="project-number">08</span>
-            <h3>Statistical Data Visualization</h3>
-            <p>
-                Creation of professional statistical tables, charts, graphs,
-                dashboards, and data presentations.
-            </p>
-            <a href="projects/data-visualization.html">
-                Learn More →
-            </a>
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
-    <!-- =========================
-         HEADER
-    ========================== -->
-
-    <header>
-
-        <div class="logo">
-            SULTAN ANALYSIS
-        </div>
-
-        <nav>
-
-            <a href="#home">
-                Home
-            </a>
-
-            <a href="#services">
-                Services
-            </a>
-
-            <a href="#contact">
-                Contact
-            </a>
-
-        </nav>
-
-    </header>
-
-
-
-    <!-- =========================
-         HOME
-    ========================== -->
-
-    <section class="home" id="home">
-
-        <div class="home-content">
-
-            <h1>
-                SULTAN ANALYSIS
-            </h1>
-
-            <h2>
-                Transforming Data into Meaningful Insights
-            </h2>
-
-            <p>
-                Professional Data Analysis, Statistical Analysis,
-                Data Cleaning, Research Design, Research Writing
-                and Data Visualization Services.
-            </p>
-
-            <a href="#contact" class="btn">
-                Contact Us
-            </a>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         SERVICES
-    ========================== -->
-
-    <section class="services" id="services">
-
-        <h2>
-            Our Services
-        </h2>
-
-        <div class="service-container">
-
-
-            <div class="service-box">
-
-                <h3>
-                    Data Analysis
-                </h3>
-
-                <p>
-                    Statistical analysis and interpretation
-                    of research data using professional
-                    statistical methods.
-                </p>
-
-            </div>
-
-
-            <div class="service-box">
-
-                <h3>
-                    Data Cleaning
-                </h3>
-
-                <p>
-                    Cleaning, organizing and preparing
-                    datasets for accurate statistical analysis.
-                </p>
-
-            </div>
-
-
-            <div class="service-box">
-
-                <h3>
-                    Research Design
-                </h3>
-
-                <p>
-                    Support in research methodology,
-                    research objectives and study design.
-                </p>
-
-            </div>
-
-
-            <div class="service-box">
-
-                <h3>
-                    Data Visualization
-                </h3>
-
-                <p>
-                    Creating professional charts, graphs
-                    and statistical visualizations.
-                </p>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         CONTACT
-    ========================== -->
-
-    <section class="contact" id="contact">
-
-        <h2>
-            Contact SULTAN ANALYSIS
-        </h2>
-
-
-        <p>
-            📞 Phone 1:
-
-            <a href="tel:0614495416">
-                0614495416
-            </a>
-        </p>
-
-
-        <p>
-            📞 Phone 2:
-
-            <a href="tel:0755792134">
-                0755792134
-            </a>
-        </p>
-
-
-        <p>
-            📧 Email:
-
-            <a href="mailto:majidimudrcuth@gmail.com">
-                majidimudrcuth@gmail.com
-            </a>
-        </p>
-
-
-        <p>
-            📍 Location:
-            Tanzania
-        </p>
-
-    </section>
-
- 
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer>
-
-        <p>
-            © 2026 SULTAN ANALYSIS.
-            All Rights Reserved.
-        </p>
-
-    </footer>
-
-
-</body>
-
-</html>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <!-- Basic Website Information -->
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="SULTAN ANALYSIS provides professional data analysis, statistical analysis, data cleaning, research design, research writing and data visualization services.">
-
-    <meta name="keywords"
-          content="Sultan Analysis, data analysis, statistics, research, SPSS, Stata, data cleaning, Tanzania">
-
-    <meta name="author"
-          content="SULTAN ANALYSIS">
-
-    <!-- Website Title -->
-    <title>SULTAN ANALYSIS | Data & Statistical Analysis</title>
-
-    <!-- Website Icon -->
-    <link rel="icon" type="image/png" href="images/logo.png">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-
-<body>
-
-
-   
-        <!-- =========================
-             PORTFOLIO SECTION
-        ========================== -->
-
-        <section id="portfolio" class="portfolio">
-
-            <div class="container">
-
-                <h2>
-                    Our Portfolio
-                </h2>
-
-
-                <div class="portfolio-grid">
-
-
-                    <div class="portfolio-card">
-
-                        <h3>
-                            Tanzania Women Empowerment
-                            Data Analysis
-                        </h3>
-
-                        <p>
-                            Statistical analysis using
-                            descriptive statistics,
-                            chi-square and correlation.
-                        </p>
-
-                        <a href="#">
-                            View Project
-                        </a>
-
-                    </div>
-
-
-
-                    <div class="portfolio-card">
-
-                        <h3>
-                            Agricultural Statistical
-                            Report
-                        </h3>
-
-                        <p>
-                            Statistical analysis,
-                            tables, charts and
-                            interpretation.
-                        </p>
-
-                        <a href="#">
-                            View Project
-                        </a>
-
-                    </div>
-
-
-
-                    <div class="portfolio-card">
-
-                        <h3>
-                            Regression Analysis
-                        </h3>
-
-                        <p>
-                            Regression modelling,
-                            hypothesis testing and
-                            interpretation.
-                        </p>
-
-                        <a href="#">
-                            View Project
-                        </a>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             CONTACT SECTION
-        ========================== -->
-
-        <section id="contact" class="contact">
-
-            <div class="container">
-
-                <h2>
-                    Contact SULTAN ANALYSIS
-                </h2>
-
-
-                <p>
-                    📞 Phone:
-                    <a href="tel:0614495416">
-                        0614495416
-                    </a>
-                </p>
-
-
-                <p>
-                    📞 Phone:
-                    <a href="tel:0755792134">
-                        0755792134
-                    </a>
-                </p>
-
-
-                <p>
-                    📧 Email:
-                    <a href="mailto:majidimudrcuth@gmail.com">
-                        majidimudrcuth@gmail.com
-                    </a>
-                </p>
-
-
-                <p>
-                    📍 Tanzania
-                </p>
-
-
-                <!-- WhatsApp -->
-
-                <a
-                    href="https://wa.me/255614495416"
-                    target="_blank"
-                    class="whatsapp-btn">
-
-                    Contact us on WhatsApp
-
-                </a>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-
-    <footer>
-
-        <div class="container">
-
-            <p>
-
-                © 2026 SULTAN ANALYSIS.
-                All Rights Reserved.
-
-            </p>
-
-            <p>
-
-                Transforming Data into
-                Meaningful Insights.
-
-            </p>
-
-        </div>
-
-    </footer>
-
-
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-
-
-</body>
-
-</html>
-
-
- =========================
-     OUR PROJECTS SECTION
-========================== -->
-
-<section id="projects" class="projects">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <p class="small-title">
-                OUR WORK
-            </p>
-
-            <h2>
-                Our Projects
-            </h2>
-
-            <p>
-                Explore some of our statistical analysis,
-                research and data visualization projects.
-            </p>
-
-        </div>
-
-
-        <div class="project-grid">
-
-
-            <!-- PROJECT 1 -->
-
-            <div class="project-card">
-
-                <div class="project-image">
-
-                    <div class="project-number">
-                        01
-                    </div>
-
-                </div>
-
-                <div class="project-content">
-
-                    <span class="project-category">
-                        Data Analysis
-                    </span>
-
-                    <h3>
-                        Tanzania Women Empowerment
-                        Data Analysis
-                    </h3>
-
-                    <p>
-
-                        Analysis of Tanzania women empowerment
-                        data using statistical methods and
-                        interpretation of findings.
-
-                    </p>
-
-                    <div class="project-tools">
-
-                        <span>Stata</span>
-                        <span>Statistics</span>
-                        <span>Research</span>
-
-                    </div>
-
-                    <a href="#" class="project-btn">
-                        View Project →
-                    </a>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- PROJECT 2 -->
-
-            <div class="project-card">
-
-                <div class="project-image">
-
-                    <div class="project-number">
-                        02
-                    </div>
-
-                </div>
-
-                <div class="project-content">
-
-                    <span class="project-category">
-                        Statistical Report
-                    </span>
-
-                    <h3>
-                        Agricultural Statistical
-                        Analysis
-                    </h3>
-
-                    <p>
-
-                        Statistical analysis of agricultural
-                        data including tables, charts,
-                        descriptive statistics and
-                        interpretation.
-
-                    </p>
-
-                    <div class="project-tools">
-
-                        <span>Statistics</span>
-                        <span>Charts</span>
-                        <span>Report</span>
-
-                    </div>
-
-                    <a href="#" class="project-btn">
-                        View Project →
-                    </a>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- PROJECT 3 -->
-
-            <div class="project-card">
-
-                <div class="project-image">
-
-                    <div class="project-number">
-                        03
-                    </div>
-
-                </div>
-
-                <div class="project-content">
-
-                    <span class="project-category">
-                        Regression
-                    </span>
-
-                    <h3>
-                        Regression Analysis
-                    </h3>
-
-                    <p>
-
-                        Linear regression analysis including
-                        slope, intercept, R-squared,
-                        adjusted R-squared and ANOVA.
-
-                    </p>
-
-                    <div class="project-tools">
-
-                        <span>Regression</span>
-                        <span>R²</span>
-                        <span>ANOVA</span>
-
-                    </div>
-
-                    <a href="#" class="project-btn">
-                        View Project →
-                    </a>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- PROJECT 4 -->
-
-            <div class="project-card">
-
-                <div class="project-image">
-
-                    <div class="project-number">
-                        04
-                    </div>
-
-                </div>
-
-                <div class="project-content">
-
-                    <span class="project-category">
-                        Hypothesis Testing
-                    </span>
-
-                    <h3>
-                        Chi-Square Analysis
-                    </h3>
-
-                    <p>
-
-                        Chi-square analysis for examining
-                        relationships between categorical
-                        variables and interpretation of
-                        statistical significance.
-
-                    </p>
-
-                    <div class="project-tools">
-
-                        <span>Chi-Square</span>
-                        <span>SPSS</span>
-                        <span>Stata</span>
-
-                    </div>
-
-                    <a href="#" class="project-btn">
-                        View Project →
-                    </a>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- PROJECT 5 -->
-
-            <div class="project-card">
-
-                <div class="project-image">
-
-                    <div class="project-number">
-                        05
-                    </div>
-
-                </div>
-
-                <div class="project-content">
-
-                    <span class="project-category">
-                        Correlation
-                    </span>
-
-                    <h3>
-                        Correlation Analysis
-                    </h3>
-
-                    <p>
-
-
-                    </p>
-
-                    <div class="project-tools">
-
-                        <span>Pearson</span>
-                        <span>Spearman</span>
-                        <span>Stata</span>
-
-                    </div>
-
-                    <a href="#" class="project-btn">
-                        View Project →
-                    </a>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- PROJECT 6 -->
-
-            <div class="project-card">
-
-                <div class="project-image">
-
-                    <div class="project-number">
-                        06
-                    </div>
-
-                </div>
-
-                <div class="project-content">
-
-                    <span class="project-category">
-                        Descriptive Statistics
-                    </span>
-
-                    <h3>
-                        Descriptive Statistics
-                    </h3>
-
-
-                    </p>
-
-                    <div class="project-tools">
-
-                        <span>Mean</span>
-                        <span>SD</span>
-                        <span>Outliers</span>
-
-                    </div>
-
-                    <a href="#" class="project-btn">
-                        View Project →
-                    </a>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- PROJECT 7 -->
-
-            <div class="project-card">
-
-                <div class="project-image">
-
-                    <div class="project-number">
-                        07
-                    </div>
-
-                </div>
-
-                <div class="project-content">
-
-                    <span class="project-category">
-                        Research
-                    </span>
-
-                    <h3>
-                        Research Design & Analysis
-                    </h3>
-
-                    <p>
-
-                        Research objectives, hypotheses,
-                        study design, statistical methods
-                        and interpretation of research
-                        findings.
-
-                    </p>
-
-                    <div class="project-tools">
-
-                        <span>Research</span>
-                        <span>Methods</span>
-                        <span>Statistics</span>
-
-                    </div>
-
-                    <a href="#" class="project-btn">
-                        View Project →
-                    </a>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- PROJECT 8 -->
-
-            <div class="project-card">
-
-                <div class="project-image">
-
-                    <div class="project-number">
-                        08
-                    </div>
-
-                </div>
-
-                <div class="project-content">
-
-                    <span class="project-category">
-                        Data Visualization
-                    </span>
-
-                    <h3>
-                        Statistical Data Visualization
-                    </h3>
-
-                    <p>
-
-                        Professional visualization using
-                        bar charts, pie charts, histograms,
-                        box plots and other statistical
-                        graphics.
-
-                    </p>
-
-                    <div class="project-tools">
-
-                        <span>Charts</span>
-                        <span>Graphs</span>
-                        <span>Visualization</span>
-
-                    </div>
-
-                    <a href="#" class="project-btn">
-                        View Project →
-                    </a>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-        <!-- VIEW ALL PROJECTS BUTTON -->
-
-        <div class="view-all">
-
-            <a href="#" class="btn">
-                View All Projects
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-  
-<header class="navbar">
-    <div class="logo">
-        <h2>SULTAN ANALYSIS</h2>
-        <span>Transforming Data into Meaningful Insights</span>
-    </div>
-
-    <nav>
-        <a href="#home">Start</a>
-        <a href="#about">About</a>
-        <a href="#vision">Vision</a>
-        <a href="#mission">Mission</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#request">Request</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="auth-buttons">
-        <a href="login.html" class="login-btn">Log In</a>
-        <button onclick="logoutUser()" class="logout-btn">Log Out</button>
-        
     </div>
 </header>
 
-<section id="vision" class="vision-mission">
 
-    <div class="section-title">
-        <p>OUR DIRECTION</p>
-        <h2>Vision & Mission</h2>
-        <span>Our commitment to transforming data into meaningful insights.</span>
+
+
+
+
+
+<!-- =========================================================
+  SULTAN ANALYSIS — Auto-scrolling image rows (2 rows, opposite directions)
+  Row 1: right ➜ left
+  Row 2: left ➜ right
+  Paste this HTML wherever you want the images to appear on your website.
+========================================================= -->
+
+<section class="sa-carousel-section">
+
+  <!-- ROW 1: right to left -->
+  <div class="sa-carousel">
+    <div class="sa-track sa-track-left">
+      <div class="sa-slide"><img src="founder.png" alt="SULTAN ANALYSIS founder"></div>
+      <div class="sa-slide"><img src="images/istockphoto-1509372418-1024x1024.jpg" alt="Data analysis workspace"></div>
+      <div class="sa-slide"><img src="images/istockphoto-2200122715-1024x1024.jpg" alt="Business data analysis"></div>
+      <div class="sa-slide"><img src="images/istockphoto-2264853622-1024x1024.jpg" alt="Statistical charts and reports"></div>
+      <div class="sa-slide"><img src="images/istockphoto-2292654740-1024x1024.jpg" alt="Research data visualization"></div>
+      <!-- duplicate set — required so the loop doesn't look broken -->
+      <div class="sa-slide" aria-hidden="true"><img src="founder.png" alt=""></div>
+      <div class="sa-slide" aria-hidden="true"><img src="images/istockphoto-1509372418-1024x1024.jpg" alt=""></div>
+      <div class="sa-slide" aria-hidden="true"><img src="images/istockphoto-2200122715-1024x1024.jpg" alt=""></div>
+      <div class="sa-slide" aria-hidden="true"><img src="images/istockphoto-2264853622-1024x1024.jpg" alt=""></div>
+      <div class="sa-slide" aria-hidden="true"><img src="images/istockphoto-2292654740-1024x1024.jpg" alt=""></div>
     </div>
+  </div>
 
-    <div class="vm-container">
-
-        <!-- Vision -->
-        <div class="vm-card vision-card">
-            <div class="vm-icon">👁️</div>
-
-            <h3>Our Vision</h3>
-
-            <p>
-                To become a trusted and leading provider of statistical,
-                research, data analysis, and data-driven solutions in Tanzania
-                and beyond.
-            </p>
-        </div>
-
-        <!-- Mission -->
-        <div class="vm-card mission-card">
-            <div class="vm-icon">🎯</div>
-
-            <h3>Our Mission</h3>
-
-            <p>
-                To provide accurate, reliable, professional, and innovative
-                statistical and research solutions that help students,
-                researchers, organizations, businesses, and institutions
-                transform data into meaningful insights for better
-                decision-making.
-            </p>
-        </div>
-
+  <!-- ROW 2: left to right -->
+  <div class="sa-carousel">
+    <div class="sa-track sa-track-right">
+      <div class="sa-slide"><img src="founder.png" alt="SULTAN ANALYSIS founder"></div>
+      <div class="sa-slide"><img src="images/istockphoto-1509372418-1024x1024.jpg" alt="Data analysis workspace"></div>
+      <div class="sa-slide"><img src="images/istockphoto-2200122715-1024x1024.jpg" alt="Business data analysis"></div>
+      <div class="sa-slide"><img src="images/istockphoto-2264853622-1024x1024.jpg" alt="Statistical charts and reports"></div>
+      <div class="sa-slide"><img src="images/istockphoto-2292654740-1024x1024.jpg" alt="Research data visualization"></div>
+      <!-- duplicate set -->
+      <div class="sa-slide" aria-hidden="true"><img src="founder.png" alt=""></div>
+      <div class="sa-slide" aria-hidden="true"><img src="images/istockphoto-1509372418-1024x1024.jpg" alt=""></div>
+      <div class="sa-slide" aria-hidden="true"><img src="images/istockphoto-2200122715-1024x1024.jpg" alt=""></div>
+      <div class="sa-slide" aria-hidden="true"><img src="images/istockphoto-2264853622-1024x1024.jpg" alt=""></div>
+      <div class="sa-slide" aria-hidden="true"><img src="images/istockphoto-2292654740-1024x1024.jpg" alt=""></div>
     </div>
-
-
-</section>
-<section id="services" class="services">
-
-    <div class="section-title">
-        <p>WHAT WE DO</p>
-        <h2>Our Services</h2>
-        <span>Professional statistical, research and data solutions.</span>
-    </div>
-
-    <div class="services-grid">
-
-        <div class="service-card">
-            <div class="service-icon">📊</div>
-            <h3>Data Analysis</h3>
-            <p>
-                Statistical analysis and interpretation using modern
-                statistical methods and software.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon">🧹</div>
-            <h3>Data Cleaning</h3>
-            <p>
-                Cleaning, checking, coding and preparing datasets
-                for accurate analysis.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon">🔬</div>
-            <h3>Research Design</h3>
-            <p>
-                Support in research design, methodology, objectives,
-                hypotheses and statistical methods.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon">📝</div>
-            <h3>Research Writing</h3>
-            <p>
-                Professional support in research reports, academic
-                writing and statistical interpretation.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon">📈</div>
-            <h3>Data Visualization</h3>
-            <p>
-                Creating professional charts, graphs, tables and
-                dashboards to communicate data clearly.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon">💻</div>
-            <h3>Statistical Software</h3>
-            <p>
-                Installation and support for SPSS, Stata, R and
-                EViews statistical software.
-            </p>
-        </div>
-
-    </div>
+  </div>
 
 </section>
 
+<style>
+  .sa-carousel-section {
+    width: 100%;
+    background: #0b1220;
+    padding: 24px 0;
+    overflow: hidden;
+  }
 
-/
+  .sa-carousel {
+    width: 100%;
+    overflow: hidden;
+    margin: 12px 0;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  }
 
-/
-<section id="request" class="request-section">
+  .sa-track {
+    display: flex;
+    width: max-content;
+  }
 
-    <div class="section-title">
-        <p>GET STARTED</p>
-        <h2>Request a Service</h2>
-        <span>
-            Tell us what you need and our team will get back to you.
-        </span>
-    </div>
+  /* Row 1: right to left */
+  .sa-track-left {
+    animation: sa-scroll-left 30s linear infinite;
+  }
 
-    <div class="request-container">
+  /* Row 2: left to right */
+  .sa-track-right {
+    animation: sa-scroll-right 30s linear infinite;
+  }
 
-        <div class="request-info">
-            <h3>Need Statistical or Research Support?</h3>
+  .sa-track:hover {
+    animation-play-state: paused; /* pauses when the mouse hovers over it */
+  }
 
-            <p>
-                Whether you need data analysis, data cleaning, research
-                design, report writing, or statistical software support,
-                SULTAN ANALYSIS is ready to help.
-            </p>
+  .sa-slide {
+    flex: 0 0 auto;
+    width: 320px;
+    height: 200px;
+    margin: 0 12px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  }
 
-            <div class="request-item">
-                <strong>📊 Data Analysis</strong>
-                <span>SPSS • Stata • R • EViews</span>
-            </div>
+  .sa-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
 
-            <div class="request-item">
-                <strong>🔬 Research Support</strong>
-                <span>Research design and methodology</span>
-            </div>
+  @keyframes sa-scroll-left {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
 
-            <div class="request-item">
-                <strong>📈 Data Visualization</strong>
-                <span>Charts, graphs and statistical tables</span>
-            </div>
+  @keyframes sa-scroll-right {
+    from { transform: translateX(-50%); }
+    to   { transform: translateX(0); }
+  }
+
+  @media (max-width: 640px) {
+    .sa-slide {
+      width: 220px;
+      height: 140px;
+      margin: 0 8px;
+    }
+  }
+</style>
+<main>
+<section id="about" class="py-5">
+    <div class="container py-4">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6"><p class="section-label mb-2">ABOUT US</p><h2 class="display-6 fw-bold mb-4">Turning data into knowledge</h2><p class="lead">We help people understand what their data is saying and make decisions with confidence.</p><p class="text-secondary">Our work covers the complete analysis process, from data cleaning and preparation through statistical analysis, visualization, interpretation, and reporting.</p></div>
+            <div class="col-lg-6"><div class="row g-3"><div class="col-6"><div class="service-card p-4"><i class="bi bi-database-fill service-icon"></i><h3 class="h5 mt-3">Data analysis</h3></div></div><div class="col-6"><div class="service-card p-4"><i class="bi bi-graph-up-arrow service-icon"></i><h3 class="h5 mt-3">Visualization</h3></div></div><div class="col-6"><div class="service-card p-4"><i class="bi bi-search service-icon"></i><h3 class="h5 mt-3">Research</h3></div></div><div class="col-6"><div class="service-card p-4"><i class="bi bi-file-earmark-text service-icon"></i><h3 class="h5 mt-3">Reporting</h3></div></div></div></div>
         </div>
+    </div>
+</section>
+<se
 
-        <form class="request-form" id="requestForm">
 
-            <input
-                type="text"
-                id="clientName"
-                placeholder="Your Name"
-                required
-            >
+<section class="section-band py-5"><div class="container py-4"><div class="text-center mb-5"><p class="section-label mb-2">OUR DIRECTION</p><h2 class="display-6 fw-bold">Vision &amp; mission</h2></div><div class="row g-4"><div class="col-md-6"><article class="service-card bg-white p-4 text-center"><i class="bi bi-eye-fill service-icon"></i><h3 class="h4 mt-3">Our vision</h3><p class="text-secondary mb-0">To become a trusted and leading provider of statistical, research, data analysis, and data-driven solutions in Tanzania and beyond.</p></article></div><div class="col-md-6"><article class="service-card bg-white p-4 text-center"><i class="bi bi-bullseye service-icon"></i><h3 class="h4 mt-3">Our mission</h3><p class="text-secondary mb-0">To provide accurate, reliable, professional, and innovative solutions that transform data into meaningful insights for better decision-making.</p></article></div></div></div></section>
 
-            <input
-                type="tel"
-                id="clientPhone"
-                placeholder="Phone Number"
-                required
-            >
+<section id="services" class="py-5"><div class="container py-4"><div class="text-center mb-5"><p class="section-label mb-2">WHAT WE DO</p><h2 class="display-6 fw-bold">Our services</h2><p class="text-secondary">Professional statistical, research, and data solutions.</p></div><div class="row g-4">
+    <div class="col-md-6 col-lg-4"><article class="service-card p-4"><i class="bi bi-bar-chart-fill service-icon"></i><h3 class="h4 mt-3">Data analysis</h3><p class="text-secondary">Statistical analysis and interpretation using appropriate methods and software.</p></article></div>
+    <div class="col-md-6 col-lg-4"><article class="service-card p-4"><i class="bi bi-database-fill-gear service-icon"></i><h3 class="h4 mt-3">Data cleaning</h3><p class="text-secondary">Cleaning, coding, checking, and preparing datasets for accurate analysis.</p></article></div>
+    <div class="col-md-6 col-lg-4"><article class="service-card p-4"><i class="bi bi-search service-icon"></i><h3 class="h4 mt-3">Research design</h3><p class="text-secondary">Support with methodology, objectives, hypotheses, sampling, and study design.</p></article></div>
+    <div class="col-md-6 col-lg-4"><article class="service-card p-4"><i class="bi bi-file-earmark-text-fill service-icon"></i><h3 class="h4 mt-3">Research writing</h3><p class="text-secondary">Professional reports, statistical interpretation, and clear presentation of findings.</p></article></div>
+    <div class="col-md-6 col-lg-4"><article class="service-card p-4"><i class="bi bi-pie-chart-fill service-icon"></i><h3 class="h4 mt-3">Data visualization</h3><p class="text-secondary">Charts, graphs, dashboards, tables, and presentations that communicate clearly.</p></article></div>
+    <div class="col-md-6 col-lg-4"><article class="service-card p-4"><i class="bi bi-pc-display-horizontal service-icon"></i><h3 class="h4 mt-3">Statistical software</h3><p class="text-secondary">SPSS, Stata, R, and EViews installation and statistical software support.</p></article></div>
+</div></div></section>
 
-            <input
-                type="email"
-                id="clientEmail"
-                placeholder="Email Address"
-            >
+<section id="projects" class="section-band py-5"><div class="container py-4"><div class="text-center mb-5"><p class="section-label mb-2">OUR WORK</p><h2 class="display-6 fw-bold">Selected projects</h2></div><div class="row g-4">
+    <div class="col-md-6 col-lg-4"><article class="project-card bg-white p-4"><span class="project-number">PROJECT 01</span><h3 class="h4 mt-3">Women empowerment data analysis</h3><p class="text-secondary">Descriptive, inferential, chi-square, and correlation analysis of women empowerment data.</p></article></div>
+    <div class="col-md-6 col-lg-4"><article class="project-card bg-white p-4"><span class="project-number">PROJECT 02</span><h3 class="h4 mt-3">Agricultural statistical analysis</h3><p class="text-secondary">Agricultural data analysis with tables, charts, histograms, and interpretation.</p></article></div>
+    <div class="col-md-6 col-lg-4"><article class="project-card bg-white p-4"><span class="project-number">PROJECT 03</span><h3 class="h4 mt-3">Regression analysis</h3><p class="text-secondary">Regression modelling with R-squared, ANOVA, and statistical interpretation.</p></article></div>
+    <div class="col-md-6 col-lg-4"><article class="project-card bg-white p-4"><span class="project-number">PROJECT 04</span><h3 class="h4 mt-3">Chi-square analysis</h3><p class="text-secondary">Analysis of relationships between categorical variables using contingency tables.</p></article></div>
+    <div class="col-md-6 col-lg-4"><article class="project-card bg-white p-4"><span class="project-number">PROJECT 05</span><h3 class="h4 mt-3">Correlation analysis</h3><p class="text-secondary">Pearson and Spearman methods for examining relationships between variables.</p></article></div>
+    <div class="col-md-6 col-lg-4"><article class="project-card bg-white p-4"><span class="project-number">PROJECT 06</span><h3 class="h4 mt-3">Descriptive statistics</h3><p class="text-secondary">Mean, median, variance, standard deviation, skewness, kurtosis, and outliers.</p></article></div>
+</div></div></section>
 
-           
+
+
+<!-- =========================================================
+  SULTAN ANALYSIS — "Meet Our Partners" scrolling heading
+  Moves right ➜ left at normal speed, on loop.
+  Colors match the Sultan Analysis brand (blue / green / gold).
+  Paste this above your logo strip section.
+========================================================= -->
+
+<section class="sa-partner-banner">
+  <div class="sa-partner-track">
+    <span class="sa-partner-text">MEET OUR PARTNERS OF SULTAN ANALYSIS &nbsp;&nbsp;★&nbsp;&nbsp; PROFESSIONAL OF STATISTICAL DATA ANALYSIS</span>
+    <span class="sa-partner-text" aria-hidden="true">MEET OUR PARTNERS OF SULTAN ANALYSIS &nbsp;&nbsp;★&nbsp;&nbsp; PROFESSIONAL OF STATISTICAL DATA ANALYSIS</span>
+  </div>
+</section>
+
+<style>
+  .sa-partner-banner {
+    width: 100%;
+    background: linear-gradient(90deg, #0b1f4d 0%, #124e8c 50%, #0b1f4d 100%);
+    padding: 18px 0;
+    overflow: hidden;
+    border-top: 3px solid #f6c90e;
+    border-bottom: 3px solid #f6c90e;
+  }
+
+  .sa-partner-track {
+    display: flex;
+    width: max-content;
+    animation: sa-partner-scroll 35s linear infinite;
+    /* 35s = normal, steady speed. Raise to slow down, lower to speed up. */
+  }
+
+  .sa-partner-track:hover {
+    animation-play-state: paused;
+  }
+
+  .sa-partner-text {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding-right: 70px;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+
+    /* Attractive gradient text: green -> gold -> blue, matching the Sultan Analysis logo */
+    background: linear-gradient(90deg, #2fbf71, #f6c90e, #4aa3ff, #2fbf71);
+    background-size: 300% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: sa-shine 6s linear infinite;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+  }
+
+  @keyframes sa-partner-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  @keyframes sa-shine {
+    from { background-position: 0% center; }
+    to   { background-position: 300% center; }
+  }
+
+  @media (max-width: 640px) {
+    .sa-partner-text {
+      font-size: 16px;
+      padding-right: 45px;
+    }
+  }
+</style>
+
+<!-- =========================================================
+  SULTAN ANALYSIS — Partner / affiliation logo strip
+  Moves right ➜ left at a normal (moderate) speed, on loop.
+  Paste this wherever you want the logos to appear on your website.
+========================================================= -->
+
+<section class="sa-logo-section">
+  <div class="sa-logo-carousel">
+    <div class="sa-logo-track">
+      <!-- First set of logos -->
+      <div class="sa-logo-slide"><img src="logos/1280px-Coat_of_arms_of_Tanzania.svg.png" alt="Coat of Arms of Tanzania"></div>
+      <div class="sa-logo-slide"><img src="logos/3840px-Seal_of_the_United_States_Agency_for_International_Development.svg.png" alt="USAID"></div>
+      <div class="sa-logo-slide"><img src="logos/Bank-of-Tanzania-Logo (1).png" alt="Bank of Tanzania"></div>
+      <div class="sa-logo-slide"><img src="logos/file_00000000463c71f48376970273360c1b.png" alt="Sultan Analysis"></div>
+      <div class="sa-logo-slide"><img src="logos/IRDP -expresstz-2.png" alt="Institute of Rural Development Planning"></div>
+      <div class="sa-logo-slide"><img src="logos/logo-en.png" alt="National Bureau of Statistics Tanzania"></div>
+
+      <!-- Duplicate set — required so the loop doesn't look broken -->
+      <div class="sa-logo-slide" aria-hidden="true"><img src="logos/1280px-Coat_of_arms_of_Tanzania.svg.png" alt=""></div>
+      <div class="sa-logo-slide" aria-hidden="true"><img src="logos/3840px-Seal_of_the_United_States_Agency_for_International_Development.svg.png" alt=""></div>
+      <div class="sa-logo-slide" aria-hidden="true"><img src="logos/Bank-of-Tanzania-Logo (1).png" alt=""></div>
+      <div class="sa-logo-slide" aria-hidden="true"><img src="logos/file_00000000463c71f48376970273360c1b.png" alt=""></div>
+      <div class="sa-logo-slide" aria-hidden="true"><img src="logos/IRDP -expresstz-2.png" alt=""></div>
+      <div class="sa-logo-slide" aria-hidden="true"><img src="logos/logo-en.png" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .sa-logo-section {
+    width: 100%;
+    background: #ffffff;
+    padding: 28px 0;
+    overflow: hidden;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  .sa-logo-carousel {
+    width: 100%;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  }
+
+  .sa-logo-track {
+    display: flex;
+    width: max-content;
+    animation: sa-logo-scroll 25s linear infinite;
+    /* 25s = normal / moderate speed. Raise the number to slow it down, lower it to speed it up. */
+  }
+
+  .sa-logo-track:hover {
+    animation-play-state: paused;
+  }
+
+  .sa-logo-slide {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 100px;
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sa-logo-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  @keyframes sa-logo-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  @media (max-width: 640px) {
+    .sa-logo-slide {
+      width: 100px;
+      height: 70px;
+      margin: 0 18px;
+    }
+  }
+</style>
+
+
+<section id="contact" class="contact py-5"><div class="container py-4"><div class="text-center mb-5"><h2 class="display-6 fw-bold">Contact SULTAN ANALYSIS</h2><p>Get in touch for professional statistical and research support.</p></div><div class="row g-4 text-center"><div class="col-md-3"><i class="bi bi-geo-alt-fill fs-1"></i><h3 class="h5 mt-3">Location</h3><p>Dodoma, Tanzania</p></div><div class="col-md-3"><i class="bi bi-telephone-fill fs-1"></i><h3 class="h5 mt-3">Phone</h3><p class="mb-1"><a href="tel:0614495416">0614495416</a></p><p><a href="tel:0755792134">0755792134</a></p></div><div class="col-md-3"><i class="bi bi-envelope-fill fs-1"></i><h3 class="h5 mt-3">Email</h3><p><a href="mailto:majidimudrcuth@gmail.com">majidimudrcuth@gmail.com</a></p></div><div class="col-md-3"><i class="bi bi-whatsapp fs-1"></i><h3 class="h5 mt-3">WhatsApp</h3><a class="btn btn-light text-success fw-bold" href="https://wa.me/255614495416" target="_blank" rel="noopener">Chat with us</a></div></div><div class="text-center mt-5"><a class="btn btn-warning btn-lg fw-bold" href="https://wa.me/255614495416?text=Hello%20SULTAN%20ANALYSIS,%20I%20would%20like%20to%20request%20your%20services." target="_blank" rel="noopener"><i class="bi bi-whatsapp me-2"></i>Request a service</a></div></div></section>
+</main>
+<footer class="py-4 bg-dark text-white"><div class="container d-flex flex-column flex-md-row justify-content-between gap-2"><span class="fw-bold">SULTAN ANALYSIS</span><small>© 2026 SULTAN ANALYSIS. All Rights Reserved.</small></div></footer>
+<a class="whatsapp-floating" href="https://wa.me/255614495416" target="_blank" rel="noopener" aria-label="Contact SULTAN ANALYSIS on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+<script src=
+"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
